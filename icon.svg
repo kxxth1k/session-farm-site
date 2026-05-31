@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill-rule="evenodd">
+  <title>Session Runs</title>
+  <!-- Three stacked session rows, staircased bottom-left to top-right.
+       Each row is a yellow pill (100x24, r=12) with a circular session marker
+       cut as a true hole, so the marker reads on any background.
+       Opacity ladder 35% / 60% / 100% conveys time depth: archive → recent → live. -->
+
+  <!-- Back row: oldest archived session -->
+  <path fill="#FFFF00" fill-opacity="0.35"
+        d="M 36 24 L 112 24 A 12 12 0 0 1 112 48 L 36 48 A 12 12 0 0 1 36 24 Z
+           M 36.5 36 A 5.5 5.5 0 1 0 47.5 36 A 5.5 5.5 0 1 0 36.5 36 Z"/>
+
+  <!-- Middle row: recent saved session -->
+  <path fill="#FFFF00" fill-opacity="0.6"
+        d="M 26 52 L 102 52 A 12 12 0 0 1 102 76 L 26 76 A 12 12 0 0 1 26 52 Z
+           M 26.5 64 A 5.5 5.5 0 1 0 37.5 64 A 5.5 5.5 0 1 0 26.5 64 Z"/>
+
+  <!-- Front row: current live session -->
+  <path fill="#FFFF00"
+        d="M 16 80 L 92 80 A 12 12 0 0 1 92 104 L 16 104 A 12 12 0 0 1 16 80 Z
+           M 16.5 92 A 5.5 5.5 0 1 0 27.5 92 A 5.5 5.5 0 1 0 16.5 92 Z"/>
+</svg>

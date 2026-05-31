@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Session Run</title>
+<meta name="description" content="Session Run does not collect, transmit, sell, or share any personal data. Everything stays on your device.">
+<link rel="icon" type="image/png" href="icon128.png">
+<style>
+  :root { --bg:#FFFFFF; --fg:#000000; --muted:#666666; --line:#DADADA; --accent:#FFFF00; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0B0B0B; --fg:#DADADA; --muted:#888888; --line:#2A2A2A; } }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:680px; margin:0 auto; padding:0 24px 80px; }
+  .brand { display:flex; align-items:center; gap:12px; padding:40px 0 24px; }
+  .brand img { width:28px; height:28px; }
+  .brand a { font-size:15px; font-weight:700; color:var(--fg); text-decoration:none; letter-spacing:-0.3px; }
+  h1 { font-size:32px; font-weight:800; letter-spacing:-0.8px; margin:24px 0 6px; }
+  .updated { font-size:13px; color:var(--muted); margin-bottom:32px; }
+  h2 { font-size:18px; font-weight:700; margin:32px 0 10px; }
+  p { margin-bottom:14px; }
+  ul { margin:0 0 14px 20px; }
+  li { margin-bottom:6px; }
+  .callout { background:var(--accent); color:#000; padding:16px 18px; border-radius:4px; font-weight:600; margin-bottom:8px; }
+  table { width:100%; border-collapse:collapse; margin:8px 0 14px; font-size:14px; }
+  th, td { text-align:left; padding:8px 10px; border:1px solid var(--line); vertical-align:top; }
+  th { font-weight:700; }
+  code { background:var(--line); padding:1px 5px; border-radius:3px; font-size:0.9em; }
+  a { color:var(--fg); }
+  footer { margin-top:48px; padding-top:24px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><img src="icon128.png" alt=""><a href="index.html">Session Run</a></div>
+
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: May 31, 2026</p>
+
+  <div class="callout">Session Run does not collect, transmit, sell, or share any personal data. No accounts, no servers, no analytics, no third parties.</div>
+
+  <h2>What data the extension handles</h2>
+  <p>To do its job, Session Run reads and stores information about your browser tabs:</p>
+  <ul>
+    <li>Tab URLs</li>
+    <li>Tab titles</li>
+    <li>Tab favicons</li>
+    <li>Window and tab grouping information</li>
+  </ul>
+  <p>This data is used solely to save, display, search, and manage your browser sessions.</p>
+
+  <h2>Where your data is stored</h2>
+  <ul>
+    <li><strong>Locally in your browser</strong>, using <code>chrome.storage.local</code>. This data never leaves your device.</li>
+    <li><strong>In files you choose to export.</strong> If you set a save folder, sessions are written as Markdown (.md) files there. You control these files entirely. JSON exports are saved only when you click to export them.</li>
+  </ul>
+
+  <h2>What the extension does NOT do</h2>
+  <ul>
+    <li>It does <strong>not</strong> send any data to any server or third party.</li>
+    <li>It does <strong>not</strong> use analytics, telemetry, or tracking.</li>
+    <li>It does <strong>not</strong> require an account or any sign-in.</li>
+    <li>It does <strong>not</strong> request host permissions or run content scripts on the pages you visit.</li>
+    <li>It does <strong>not</strong> access page content — only tab metadata (URL, title, favicon) provided by the browser.</li>
+  </ul>
+
+  <h2>Permissions</h2>
+  <table>
+    <tr><th>Permission</th><th>Purpose</th></tr>
+    <tr><td><code>tabs</code></td><td>Read tab URLs, titles, and favicons to capture and display sessions</td></tr>
+    <tr><td><code>tabGroups</code></td><td>Create and manage color-coded browser tab groups</td></tr>
+    <tr><td><code>storage</code>, <code>unlimitedStorage</code></td><td>Store saved sessions locally without size limits</td></tr>
+  </table>
+
+  <h2>Data retention and deletion</h2>
+  <p>Your sessions remain until you delete them within the extension or clear the browser's extension storage. Uninstalling the extension removes its local storage. Any .md or JSON files you exported remain in your chosen folder until you delete them yourself.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page and in the project repository.</p>
+
+  <h2>Contact</h2>
+  <p>K. — <a href="https://dsgnr.work">DSGNR.work</a> · <a href="index.html">session.farm</a></p>
+
+  <footer>© 2026 Session Run</footer>
+</div>
+</body>
+</html>
